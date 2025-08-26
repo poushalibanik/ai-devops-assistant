@@ -1,0 +1,67 @@
+Only for github:
+-----------------
+Create an issue in Demo-Poushali/seedrandom with title Bug: Randomness issue and body The seed is not consistent across platforms.
+
+Use the create_pr tool from my GitHub MCP server.
+Repository: Demo-Poushali/seedrandom
+Title: Test PR from MCP
+Head branch: feature-test-pr
+Base branch: released
+Body: This is a test pull request created via MCP server.
+
+
+For Slack:
+-------------
+send a Slack message to #all-demoaidevopsassistant saying: I am about to list all the github issues being created now onwards:
+
+
+For Jenkins:
+--------------
+Trigger my pipeline, build without any parameters, take my jenkins details from claude config file
+Please:  
+1. Trigger a build of `my-job1`.  
+2. Pass a parameter `BRANCH=main` to the job.  
+3. Show me the build number and queue status.  
+4. Wait until the build finishes, then give me the result (SUCCESS/FAILURE).  
+
+
+Check the status of my Jenkins job named "my-job3". 
+- Authenticate using my Jenkins username and API token. 
+- Retrieve whether the job is currently building, queued, failed, or successful. 
+- Show me the last build number and its status.
+
+For Kubernetes:
+----------------
+Deploy an Nginx app to Kubernetes with 2 replicas, and check its status.
+
+Deploy a Python Flask app from image poushali/flask-app:1.0 with 3 replicas, then tell me if all pods are running.
+
+
+
+
+For Github & Slack:
+---------------------
+Create a GitHub issue in the Demo-Poushali/seedrandom repo with the title "Test MCP Integration" and body "This is a test issue created via MCP."
+After the issue is created, send a Slack message to #all-demoaidevopsassistant saying:
+✅ A new GitHub issue was just created: [ISSUE_LINK] (replace [ISSUE_LINK] with the actual link).
+
+
+For Github, Slack and Jenkins:
+-------------------------------
+Create a GitHub issue in Demo-Poushali/seedrandom titled “Deploy test” with body “Please run the CI pipeline.” Then trigger Jenkins job ci-pipeline with params branch=main, and post a Slack message to #DEMO_AI_DEVOPS_ASSISTANT with the issue link and that the build was triggered.
+
+
+All:
+1. Create a GitHub issue in Demo-Poushali/seedrandom titled "End-to-End MCP Test-2" with body:
+"This issue is created to test the full MCP integration across GitHub, Jenkins, Kubernetes, and Slack."
+2. After the issue is created, build without any parameters, take my jenkins details from claude config file.
+Please:  
+1. Trigger a build of `my-job1`.  
+2. Pass a parameter `BRANCH=feature-test-pr` to the job.  
+3. Show me the build number and queue status.  
+4. Wait until the build finishes, then give me the result (SUCCESS/FAILURE). 
+
+5. If the Jenkins build succeeds, deploy a Python Flask app from image docker.io/poushali/flask-app:1.0 to Kubernetes with 3 replicas. Verify that all pods are running.
+6. Finally, post a Slack message to #all-demoaidevopsassistant saying:
+"✅ End-to-End MCP workflow completed. GitHub issue: [ISSUE_LINK], Jenkins build #[BUILD_NUMBER] result: [RESULT], Kubernetes deployment status: [STATUS]."
+
