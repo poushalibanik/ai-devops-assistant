@@ -32,11 +32,9 @@ Check the status of my Jenkins job named "my-job3".
 
 For Kubernetes:
 ----------------
-Deploy an Nginx app to Kubernetes with 2 replicas, and check its status.
+Deploy an Nginx app to Kubernetes with 2 replicas, using the full image name docker.io/library/nginx:latest, and check its status.
 
 Deploy a Python Flask app from image poushali/flask-app:1.0 with 3 replicas, then tell me if all pods are running.
-
-
 
 
 For Github & Slack:
@@ -61,7 +59,8 @@ Please:
 3. Show me the build number and queue status.  
 4. Wait until the build finishes, then give me the result (SUCCESS/FAILURE). 
 
-5. If the Jenkins build succeeds, deploy a Python Flask app from image docker.io/poushali/flask-app:1.0 to Kubernetes with 3 replicas. Verify that all pods are running.
+5. If the Jenkins build succeeds, deploy an Nginx app to Kubernetes with 2 replicas, using the full image name docker.io/library/nginx:latest, and check its status.
+Verify that all pods are running.
 6. Finally, post a Slack message to #all-demoaidevopsassistant saying:
 "✅ End-to-End MCP workflow completed. GitHub issue: [ISSUE_LINK], Jenkins build #[BUILD_NUMBER] result: [RESULT], Kubernetes deployment status: [STATUS]."
 
